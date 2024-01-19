@@ -3,9 +3,11 @@ export const compute = (first, second) => {
   const secondArr = second.split('');
   if (firstArr.length === secondArr.length) {
     const newArr = [];
+    let i = -1
     firstArr.forEach(function(item) {
-      if (firstArr[i] !== secondArr[i]) {
-        newArr.push(firstArr[i]);
+      i += 1
+      if (item !== secondArr[i]) {
+        newArr.push(item);
       }
     })
     return newArr.length
