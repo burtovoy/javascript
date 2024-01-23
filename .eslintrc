@@ -6,8 +6,8 @@
   },
   "overrides": [
     {
-      "files": [".meta/proof.ci.js", ".meta/exemplar.js", "*.spec.js"],
-      "excludedFiles": ["custom.spec.js"],
+      "files": [".meta/proof.ci.js", ".meta/exemplar.js"],
+      "excludedFiles": ["*.spec.js"],
       "extends": "@exercism/eslint-config-javascript/maintainers"
     }
   ]
