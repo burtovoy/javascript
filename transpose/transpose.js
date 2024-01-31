@@ -8,7 +8,11 @@ export const transpose = (int) => {
     const newArr = [];
     let secondArr = [];
     let maxLength = 0;
-    int.forEach((ar) => { if (ar.length > maxLength) { maxLength = ar.length; } });
+    int.forEach((ar) => {
+      if (ar.length > maxLength) {
+        maxLength = ar.length;
+      }
+    });
     for (let i = 0; i < maxLength; i += 1) {
       for (let j = int.length - 1; j >= 0; j -= 1) {
         if (!(int[j][i] === undefined && secondArr.length === 0)) {
@@ -19,7 +23,8 @@ export const transpose = (int) => {
       secondArr = [];
     }
     return newArr;
-  } if (int.length === 1) {
+  }
+  if (int.length === 1) {
     return int[0].split('');
   }
   return int;
